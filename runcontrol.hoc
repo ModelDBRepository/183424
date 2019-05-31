@@ -1,0 +1,3 @@
+v_init = e_pas_default
+tstop = 152
+dt = 0.005

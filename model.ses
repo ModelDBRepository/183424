@@ -1,0 +1,12 @@
+proc loadModel() {
+    load_file($s1)
+    load_file("gui.ses")
+    load_file("graph.ses")
+    load_file("runcontrol.hoc")
+}
+
+{
+    xpanel("ModelSelection", 0)
+    xbutton("CS56Py", "loadModel(\"CS56PySomaWithoutAxonWithoutTree3ReorderedWithSpine.hoc\")")
+    xpanel()
+}

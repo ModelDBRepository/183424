@@ -1,0 +1,18 @@
+proc fallmodelparam() {
+  xpanel( "ForAllModelParameters" )
+  xvalue( "Ra", "Ra_default", 1, "setall( Ra_default, cm_default, g_pas_default, e_pas_default )", 0, 0 )
+  xvalue( "cm", "cm_default", 1, "setall( Ra_default, cm_default, g_pas_default, e_pas_default )", 0, 0 )
+  xvalue( "g_pas", "g_pas_default", 1, "setall( Ra_default, cm_default, g_pas_default, e_pas_default )", 0, 0 )
+  xvalue( "e_pas", "e_pas_default", 1, "setall( Ra_default, cm_default, g_pas_default, e_pas_default )", 0, 0 )
+  xpanel()
+}
+
+{
+xpanel("MainGUIPanel", 0)
+xbutton("RunControl", "nrncontrolmenu()")
+xbutton("Point Manager", "load_file(\"pointman.hoc\") makeppm()")
+xbutton("ModelParameter", "makeMenuExplore()")
+xbutton("ForAllModelParameter", "fallmodelparam()")
+//xbutton("celsius", "celsius_panel()")
+xpanel()
+}

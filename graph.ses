@@ -1,0 +1,18 @@
+objectvar save_window_, rvp_
+objectvar scene_vector_[4]
+objectvar ocbox_, ocbox_list_, scene_, scene_list_
+{ocbox_list_ = new List()  scene_list_ = new List()}
+{pwman_place(0,0,0)}
+{
+save_window_ = new PlotShape(0)
+save_window_.show(0)
+save_window_.size(-262.443,301.531,-361.86,216.793)
+save_window_.variable("v")
+scene_vector_[2] = save_window_
+{save_window_.view(-262.443, -361.86, 563.974, 578.653, 717, 38, 557.1, 571.6)}
+fast_flush_list.append(save_window_)
+save_window_.save_name("fast_flush_list.")
+save_window_.exec_menu("Shape Plot")
+}
+objectvar scene_vector_[1]
+{doNotify()}

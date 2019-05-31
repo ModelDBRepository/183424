@@ -1,0 +1,7 @@
+Ra_default = 100
+Ra_spine_default = 385
+cm_default = 1
+g_pas_default = 0.0001
+e_pas_default = -65
+load_file("nrngui.hoc")
+load_file("model.ses")
